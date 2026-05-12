@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aspire — Down the Wire</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="app">
+      <header class="topbar">
+        <h1>Aspire <span class="sub">— Down the Wire</span></h1>
+        <div class="hud" id="hud" aria-live="polite">
+          <div class="hud-group">
+            <span class="chip" title="Time Budget">⏱ <b id="r-time">6</b></span>
+            <span class="chip" title="Focus">🧠 <b id="r-focus">5</b></span>
+            <span class="chip" title="Stakeholder Goodwill">🤝 <b id="r-goodwill">3</b></span>
+            <span class="chip momentum" title="Momentum (spend between rounds)">⚡ <b id="r-momentum">0</b></span>
+          </div>
+          <div class="hud-group bars">
+            <div class="bar"><label>Impact</label><div class="track"><div class="fill impact" id="b-impact"></div></div><span id="v-impact">2</span></div>
+            <div class="bar"><label>Risk</label><div class="track"><div class="fill risk" id="b-risk"></div></div><span id="v-risk">2</span></div>
+            <div class="bar"><label>Effort</label><div class="track"><div class="fill effort" id="b-effort"></div></div><span id="v-effort">2</span></div>
+          </div>
+        </div>
+      </header>
+
+      <section id="stage" class="stage"><!-- screens render here --></section>
+
+      <footer class="foot">
+        <span id="round-label">Get ready</span>
+        <span class="hint">Tip: press <kbd>A</kbd> / <kbd>B</kbd> / <kbd>C</kbd></span>
+      </footer>
+    </main>
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
